@@ -1,4 +1,3 @@
-#!/bin/bash
 <stdio.h>
 
      main - Entry point
