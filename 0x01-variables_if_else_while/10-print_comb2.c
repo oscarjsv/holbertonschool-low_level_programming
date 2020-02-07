@@ -14,7 +14,7 @@ for (a = 48; a <= 57; a++)
 {
 putchar(c);
 putchar(a);
-if (c ==57 && a== 57)
+if (c == 57 && a == 57)
 break;
 putchar(',');
 putchar(' ');
