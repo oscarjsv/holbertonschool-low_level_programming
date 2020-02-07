@@ -15,10 +15,13 @@ for (a = 48; a <= 57; a++)
 putchar(c);
 putchar(a);
 if (c == 57 && a == 57)
+{
 break;
+}
 putchar(',');
 putchar(' ');
 }
 }
+putchar('\n');
 return (0);
 }
