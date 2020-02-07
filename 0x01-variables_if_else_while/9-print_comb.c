@@ -9,13 +9,13 @@ int main(void)
 int c;
 for (c = 0; c < 10; c++)
 {
-if (c!=0)
+if (c != 0)
 {
 putchar(',');
-putchar(' ');    
-}
+putchar(' ');
+xc}
 putchar(c % 10 + '0');
 }
-putchar ('\n');
+putchar('\n');
 return (0);
 }
