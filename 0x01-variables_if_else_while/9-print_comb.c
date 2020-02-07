@@ -13,7 +13,7 @@ if (c != 0)
 {
 putchar(',');
 putchar(' ');
-xc}
+}
 putchar(c % 10 + '0');
 }
 putchar('\n');
