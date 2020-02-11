@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _islower - printf is lower
- *
+ * @c: An ascii char to compare
  * Return: Always 0 (Success)
  */
 int _islower(int c)
