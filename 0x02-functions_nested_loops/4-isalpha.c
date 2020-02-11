@@ -2,7 +2,7 @@
 /**
  * _isalpha - printf file an letter
  * @c: An ascii char to compare
- * return: return numb 1 numb depending of the condition
+ * Return: return numb 1 numb depending of the condition
  */
 int _isalpha(int c)
 {
