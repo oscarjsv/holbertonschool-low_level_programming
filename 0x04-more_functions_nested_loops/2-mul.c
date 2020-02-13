@@ -1,8 +1,10 @@
 #include "holberton.h"
 /**
- * _islower - printf is lower
- * @c: An ascii char to compare
- * Return: Always 0 (Success)
+ * mul - Writes the multiplication between two variables
+ * @a: first variable
+ * @b: second variable
+ *
+ * Return: return the value of a by b
  */
 int mul(int a, int b)
 {
