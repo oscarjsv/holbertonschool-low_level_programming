@@ -1,7 +1,14 @@
 #include "holberton.h"
+
 /**
- * print_diagonal - draws a diagonal line on the terminal.
- * @size: number of times the character should be printed
+ * main - check the code for Holberton School students.
+ *
  * Return: Always 0.
  */
-void print_square(int size)
+int main(void)
+{
+	print_square(2);
+	print_square(10);
+	print_square(0);
+	return (0);
+}
