@@ -1,22 +1,22 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
- * reverse_array - reverse
- * @a: an array of integers
- * @n: the number of elements to swap
+ * string_toupper - changes all lowercase letters to uppercase.
+ * @s: string
  *
+ * Return: return uppercase letters.
  */
-
-void reverse_array(int *a, int n)
+char *string_toupper(char *s)
 {
-	int i = 0;
-	int fin;
+	int i;
 
-	while (i < (n / 2))
+	i = 0;
+	/*travel through the string until the end*/
+	while (*(s + i) != '\0')
 	{
-		fin = a[i];
-		a[i] = a[n - i - 1];
-		a[n - i - 1] = fin;
-
+		if (s[i] >= 'a' && s[i] <= 'z')
+			*(s + i) = (*(s + i) - 32); 
 		i++;
 	}
+	return (s);
 }
