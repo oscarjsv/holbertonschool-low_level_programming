@@ -2,6 +2,7 @@
 /**
  * _sqrt_recursion - prints natural square of a number
  * @n: given number
+ * @x: given number
  * Return: function count
  */
 int count(int n, int x);
