@@ -18,11 +18,9 @@ int _strlen(char *s)
 	return (n);
 }
 /**
- * create_array - creates the array
- * @size: size of the array
- * @c: value of the array
- * Return: pointer to the array, or NULL if
- * it fails.
+ * _strdup - copies a given string
+ * @str: string
+ * Return: new string or NULL if its empty
  */
 char *_strdup(char *str)
 {
