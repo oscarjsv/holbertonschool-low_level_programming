@@ -26,7 +26,7 @@ char *_strdup(char *str)
 {
 	char *p;
 	int i;
-	int size = _strlen(str);
+	int size = _strlen(str) + 1;
 
 	if (size == 0)
 	{
@@ -38,7 +38,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (i = 0; i <= size; i++)
+	for (i = 0; i < size; i++)
 	{
 		p[i] = str[i];
 	}
