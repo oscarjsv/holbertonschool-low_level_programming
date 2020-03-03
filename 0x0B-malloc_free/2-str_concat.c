@@ -1,22 +1,9 @@
 #include "holberton.h"
 #include <stdlib.h>
-/**
- * _strlen - Print a square
- * @s:  Size of the square
- * Return: n
- */
-int _strlen(char *s)
-{
 
-	int n;
+int _strlen(char *s);
 
-	for (n = 0; *s != '\0'; s++)
-	{
-		n++;
-	}
 
-	return (n);
-}
 /**
  * str_concat - concatenates two strings.
  * @s1: first string
@@ -57,4 +44,21 @@ char *str_concat(char *s1, char *s2)
 	}
 	p[i] = s2[b];
 	return (p);
+}
+
+ * _strlen - Print a square
+ * @s:  Size of the square
+ * Return: n
+ */
+int _strlen(char *s)
+{
+
+	int n;
+
+	for (n = 0; *s != '\0'; s++)
+	{
+		n++;
+	}
+
+	return (n);
 }
