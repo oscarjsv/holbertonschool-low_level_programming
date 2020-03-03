@@ -1,64 +1,73 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 int _strlen(char *s);
 
-
 /**
- * str_concat - concatenates two strings.
- * @s1: first string
- * @s2: second string
- * Return: two strins or Null
+ *str_concat - concatenate 2 strings
+ *@s1: string 1
+ *@s2: string 2
+ *Return: reurn concatenated strings
  */
+
 char *str_concat(char *s1, char *s2)
 {
-	char *p;
-	int i, b;
-	int size1;
-	int size2;
+
+	int size_s1, size_s2;
+	int k, counter;
+	char *C;
 
 	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		return (NULL);
-	}
-	size1 = _strlen(s1);
-	size2 = _strlen(s2) + 1;
-
-	p = (char*) malloc(size1 + size2);
-	if (p == NULL)
-	{
-		return (NULL);
+		s2 = "";
 	}
 
-	for (i = 0; i < size1; i++)
+	size_s1 = _strlen(s1);
+	size_s2 = _strlen(s2);
+
+	C = (char *) malloc(size_s1 + size_s2 + 1);
+
+	if (C == NULL)
 	{
-		p[i] = s1[i];
+		return (NULL);
 	}
-	for (b = 0; b < size2; b++, i++)
+
+	for (k = 0, counter = 0; k < size_s1; k++, counter++)
 	{
-		p[i] = s2[b];
+		C[k] = s1[counter];
 	}
-	p[i] = s2[b];
-	return (p);
+
+	for (counter = 0; counter < size_s2; counter++, k++)
+	{
+		C[k] = s2[counter];
+	}
+	C[k] = s2[counter];
+
+	return (C);
 }
 
- * _strlen - Print a square
- * @s:  Size of the square
- * Return: n
+
+/**
+ *_strlen - legnth of a string
+ *@s: string to be evaluated
+ *Return: return the legnth without taking into account the nul
  */
+
 int _strlen(char *s)
 {
 
-	int n;
+	int count;
 
-	for (n = 0; *s != '\0'; s++)
+	count = 0;
+	while (*s != '\0')
 	{
-		n++;
+		s++;/* moving the pointer one index*/
+		count++;
 	}
-
-	return (n);
+	return (count);
 }
