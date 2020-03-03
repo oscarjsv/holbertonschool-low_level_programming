@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * _strlen - Print a square
- *@s:  Size of the square
+ * @s:  Size of the square
  * Return: n
  */
 int _strlen(char *s)
@@ -28,7 +28,7 @@ char *_strdup(char *str)
 	int i;
 	int size = _strlen(str) + 1;
 
-	if (size == 0)
+	if (str == 0)
 	{
 		return (NULL);
 	}
