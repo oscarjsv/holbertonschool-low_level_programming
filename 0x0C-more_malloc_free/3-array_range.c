@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -7,6 +8,7 @@
  * @max: max value
  * Return: array of integers or NULL
  */
+
 int *array_range(int min, int max)
 {
 	int a, j;
