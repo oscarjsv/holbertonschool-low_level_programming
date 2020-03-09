@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include "dog.h"
+
 /**
  *print_dog - printing the dog
  *@d: the dog
  *Return: nothing
  */
+
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
@@ -25,10 +27,10 @@ void print_dog(struct dog *d)
 
 	if (d->owner == NULL)
 	{
-		printf("Name: (nil)\n");
+		printf("Owner: (nil)\n");
 	}
 	else
 	{
-		printf("owner: %s\n", d->owner);
+		printf("Owner: %s\n", d->owner);
 	}
 }
