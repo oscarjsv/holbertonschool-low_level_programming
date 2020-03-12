@@ -1,33 +1,61 @@
 #include "3-calc.h"
-
 /**
- * main - Entry point
- * @argc: Number of arguments
- * @argv: Arguments
- * Return: Returns 0 if all its ok
- **/
-int main(int argc, char **argv)
+ * op_add - addition operator
+ * @a: first int
+ * @b: second int
+ * Return: sum of 2 numbers
+ */
+int op_add(int a, int b)
 {
-	int number_a, number_b, res;
-
-	if (argc != 4)
+	return (a + b);
+}
+/**
+ * op_sub - sub operator
+ * @a: first int
+ * @b: second int
+ * Return: sum of 2 numbers
+ */
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+/**
+ * op_mul - mul operator
+ * @a: first int
+ * @b: second int
+ * Return: sum of 2 numbers
+ */
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+/**
+ * op_div - addition operator
+ * @a: first int
+ * @b: second int
+ * Return: sum of 2 numbers
+ */
+int op_div(int a, int b)
+{
+	if (b == 0)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(100);
 	}
-
-	number_a = atoi(argv[1]);
-	number_b = atoi(argv[3]);
-
-
-	if (get_op_func(argv[2]) ==  NULL)
+	return (a / b);
+}
+/**
+ * op_mod - addition operator
+ * @a: first int
+ * @b: second int
+ * Return: sum of 2 numbers
+ */
+int op_mod(int a, int b)
+{
+	if (b == 0)
 	{
 		printf("Error\n");
-		exit(99);
+		exit(100);
 	}
-
-	res = get_op_func(argv[2])(number_a, number_b);
-	printf("%d\n", res);
-
-	return (0);
+	return (a % b);
 }
