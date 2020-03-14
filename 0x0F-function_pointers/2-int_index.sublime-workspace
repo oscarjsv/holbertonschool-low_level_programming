@@ -1,1 +1,200 @@
-{}
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "#include <stdio.h>\n#include \"function_pointers.h\"\n\n\nint int_index(int *array, int size, int (*cmp)(int));\n\nint int_index(int *array, int size, int (*cmp)(int))\n{\n int i;\n\nif (size <= 0)\n{\n\treturn (-1);\n}\nif (array == NULL)\n\t{\n\t\treturn;\n\t}\n\tif (cmp NULL)\n\t{\n\t\treturn;\n\t}\n\tfor(i = 0); i < size; i++)\n\t{\n\t\tcmp(array[i]; == 1\n\t\t\treturn (-1)\n\n\t}\t\n\n\n\n}\n/**\n * is_98 - check if a number is equal to 98\n * @elem: the integer to check\n *\n * Return: 0 if false, something else otherwise.\n */\nint is_98(int elem)\n{\n    return (98 == elem);\n}\n\n/**\n * is_strictly_positive - check if a number is greater than 0\n * @elem: the integer to check\n *\n * Return: 0 if false, something else otherwise.\n */\nint is_strictly_positive(int elem)\n{\n    return (elem > 0);\n}\n\n\n/**\n * abs_is_98 - check if the absolute value of a number is 98\n * @elem: the integer to check\n *\n * Return: 0 if false, something else otherwise.\n */\nint abs_is_98(int elem)\n{\n    return (elem == 98 || -elem == 98);\n}\n\n/**\n * main - check the code for Holberton School students.\n *\n * Return: Always 0.\n */\nint main(void)\n{\n    int array[20] = {0, -98, 98, 402, 1024, 4096, -1024, -98, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 98};\n    int index;\n\n    index = int_index(array, 20, is_98);\n    printf(\"%d\\n\", index);\n    index = int_index(array, 20, abs_is_98);\n    printf(\"%d\\n\", index);\n    index = int_index(array, 20, is_strictly_positive);\n    printf(\"%d\\n\", index);\n    return (0);\n}",
+			"settings":
+			{
+				"buffer_size": 1433,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								341,
+								341
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 147.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/C++/C Single File.sublime-build",
+	"project": "2-int_index.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
