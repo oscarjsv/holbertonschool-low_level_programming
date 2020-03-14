@@ -2,10 +2,9 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * sum_them_all - It sum every parameter given.
- * @n: Last parameter before ellipsis in the function.
- *
- * Return: It returns the sum of every parameter give it to function.
+ * sum_them_all - function that summ parameters
+ * @n: number of arguments
+ * Return: 0 if fail, sum if succeed
  */
 int sum_them_all(const unsigned int n, ...)
 {
