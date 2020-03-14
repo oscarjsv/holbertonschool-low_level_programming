@@ -2,11 +2,11 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * print_numbers - Pritns numbers separated by 'separator'
+ * print_numbers - prints numbers, followed by a new line.
+ * @rec: a pointer to a string.
+ * @n: number of integers to be passed.
  *
- * @n: Last parameter before ellipsis.
- *
- * Return: It returns nothing.
+ * Return: nothing.
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
