@@ -3,11 +3,10 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - prints numbers, followed by a new line.
- * @rec: a pointer to a string.
- * @n: number of integers to be passed.
- *
- * Return: nothing.
+ * print_numbers - prints strings, followed by a new line
+ * @separator:const type Character
+ * @n: Unsigned type int
+ * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -23,7 +22,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		rec = va_arg(ap, unsigned int);
 		printf("%d", rec);
 
-		if (i != (n-1) && separator != NULL)
+		if (i != (n - 1) && separator != NULL)
 		{
 			printf("%s", separator);
 		}
