@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 /**
  * print_numbers - Pritns numbers separated by 'separator'
- * @separator: Numbers' Separator.
+ *
  * @n: Last parameter before ellipsis.
  *
  * Return: It returns nothing.
