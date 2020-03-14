@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 /**
  * sum_them_all - It sum every parameter given.
- * @counter: Last parameter before ellipsis in the function.
+ * @n: Last parameter before ellipsis in the function.
  *
  * Return: It returns the sum of every parameter give it to function.
  */

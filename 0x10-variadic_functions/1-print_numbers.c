@@ -4,7 +4,7 @@
 /**
  * print_numbers - Pritns numbers separated by 'separator'
  * @separator: Numbers' Separator.
- * @counter: Last parameter before ellipsis.
+ * @n: Last parameter before ellipsis.
  *
  * Return: It returns nothing.
  */

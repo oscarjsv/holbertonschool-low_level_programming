@@ -4,7 +4,7 @@
 /**
  * print_strings - Prints strings separated by 'separator'
  * @separator: Strings' Separator.
- * @counter: Last parameter before ellipsis.
+ * @n: Last parameter before ellipsis.
  *
  * Return: It returns nothing.
  */
