@@ -1,6 +1,7 @@
- #include <stdio.h>
-#include <stdarg.h>
 #include "variadic_functions.h"
+#include <stdio.h>
+#include <stdarg.h>
+
 /**
  * print_numbers - prints numbers, followed by a new line.
  * @rec: a pointer to a string.
