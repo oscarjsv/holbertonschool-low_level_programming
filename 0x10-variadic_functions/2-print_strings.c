@@ -2,11 +2,11 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
+ * print_strings - Prints strings separated by 'separator'
+ * @separator: Strings' Separator.
+ * @counter: Last parameter before ellipsis.
  *
- *
- *
- *
- *
+ * Return: It returns nothing.
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
