@@ -12,9 +12,9 @@ int pop_listint(listint_t **head)
 	listint_t *nododele;
 	listint_t *nextnode;
 
-	if(*head == NULL)
+	if (*head == NULL)
 	{
-		return(0);
+		return (0);
 	}
 
 	nododele = *head;
@@ -23,5 +23,5 @@ int pop_listint(listint_t **head)
 	b = nododele->n;
 	*head = nextnode;
 	free(nododele);
-	return(b);
+	return (b);
 }
