@@ -1,12 +1,8 @@
 #include "lists.h"
 /**
- *
- *
- *
- *
- *
- *
- *
+ * free_listint - frees a list of int
+ * @head: first argument
+ * Return: void
  */
 void free_listint(listint_t *head)
 {

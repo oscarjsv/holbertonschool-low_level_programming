@@ -1,12 +1,9 @@
 #include "lists.h"
 /**
- *
- *
- *
- *
- *
- *
- *
+ * add_nodeint_end - new node at the end
+ * @head: first value
+ * @n: data
+ * Return: new node at the end
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
